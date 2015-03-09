@@ -31,7 +31,7 @@ public class DragObject : MonoBehaviour
             this.DragMovement();
         }
 
-        if (this.currentStateMachine.currentState == CurrentState.Paus)
+        if (this.currentStateMachine.currentState == CurrentState.Paus || this.currentStateMachine.currentState == CurrentState.Reorganize)
         {
             this.StopRigidBodyMovement();
         }
