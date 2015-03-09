@@ -22,7 +22,7 @@ public class ReorganizeWalls : MonoBehaviour {
 			this.currentStateMachine.currentState = CurrentState.Reorganize;
 		}
 
-		if (wallInPlaceCount == this.transform.childCount-1) 
+		if (wallInPlaceCount == this.transform.childCount) 
 		{
 			this.currentStateMachine.currentState = CurrentState.Playing;
 		}
