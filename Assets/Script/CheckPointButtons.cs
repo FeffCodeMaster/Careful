@@ -17,6 +17,8 @@ public class CheckPointButtons : MonoBehaviour
 
     void Update()
     {
+
+		//REFACTOR THIS SHIIT! MAKE METHODES!
         if (this.levelCompleteResultBoard.menyActive)
         {
             if (!this.spriteRender.isVisible)

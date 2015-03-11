@@ -5,7 +5,8 @@ public enum CurrentState
 {
     Playing,
     Paus,
-	Reorganize
+	Reorganize,
+	KeyStone
 }
 
 public class StateMachine : MonoBehaviour {

@@ -9,6 +9,8 @@ public class ReorganizeWalls : MonoBehaviour {
 	StateMachine currentStateMachine;
 	Transform transformOfCurrentStateMachine;
 
+	bool movementComplete;
+
 	void Start () {
 		this.transformOfCurrentStateMachine = GameObject.Find ("CurrentGameState").transform;
 		this.currentStateMachine = this.transformOfCurrentStateMachine.GetComponent<StateMachine>();
@@ -17,14 +19,17 @@ public class ReorganizeWalls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (StartReorganize) 
+		if (this.StartReorganize) 
 		{
 			this.currentStateMachine.currentState = CurrentState.Reorganize;
 		}
 
-		if (wallInPlaceCount == this.transform.childCount) 
+		if (wallInPlaceCount == this.transform.childCount && !this.movementComplete) 
 		{
+
 			this.currentStateMachine.currentState = CurrentState.Playing;
+			this.StartReorganize = false;
+			this.movementComplete = true;
 		}
 	}
 }

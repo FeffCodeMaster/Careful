@@ -14,7 +14,7 @@ public class MoveCamera : MonoBehaviour
     bool pressed = false;
     void Start()
     {
-        this.transformActiveBubble = GameObject.FindGameObjectWithTag("CurrentActiveBubble").transform;
+        this.transformActiveBubble = GameObject.FindGameObjectWithTag("CurentActiveObjects").transform;
         this.activeBubble = this.transformActiveBubble.GetComponent<ActiveBubble>();
         this.rigidbody = gameObject.GetComponent<Rigidbody2D>();
         this.orginTouchPoint = Vector2.zero;

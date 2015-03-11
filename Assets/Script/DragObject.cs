@@ -15,7 +15,7 @@ public class DragObject : MonoBehaviour
     void Start()
     {
 
-        this.transformActiveBubble = GameObject.FindGameObjectWithTag("CurrentActiveBubble").transform;
+        this.transformActiveBubble = GameObject.FindGameObjectWithTag("CurrentActiveObjects").transform;
         this.transformOfCurrentState = GameObject.Find("CurrentGameState").transform;
 
         this.currentStateMachine = this.transformOfCurrentState.GetComponent<StateMachine>();
@@ -31,10 +31,14 @@ public class DragObject : MonoBehaviour
             this.DragMovement();
         }
 
-        if (this.currentStateMachine.currentState == CurrentState.Paus || this.currentStateMachine.currentState == CurrentState.Reorganize)
+		if (this.currentStateMachine.currentState != CurrentState.Playing)
         {
             this.StopRigidBodyMovement();
         }
+		if (Input.GetMouseButtonUp (0)) 
+		{
+			activeBubble.CurrentActiveBubble = null;
+		}
     }
 
     private void StopRigidBodyMovement()
@@ -71,8 +75,7 @@ public class DragObject : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             drag = false;
-            gameObject.transform.position = gameObject.transform.parent.position;
-            activeBubble.CurrentActiveBubble = null;
+            gameObject.transform.position = gameObject.transform.parent.position;            
         }
 
         if (activeBubble.CurrentActiveBubble != null && activeBubble.CurrentActiveBubble == gameObject.transform.parent.gameObject)

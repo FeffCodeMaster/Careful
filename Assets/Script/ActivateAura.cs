@@ -8,21 +8,21 @@ public class ActivateAura : MonoBehaviour {
     SpriteRenderer spriteRender;
     GameObject parent;
 	void Start () {
-        transformActiveBubble = GameObject.FindGameObjectWithTag("CurrentActiveBubble").transform;
-        activeBubble = transformActiveBubble.GetComponent<ActiveBubble>();
+        transformActiveBubble = GameObject.FindGameObjectWithTag("CurrentActiveObjects").transform;
+        this.activeBubble = transformActiveBubble.GetComponent<ActiveBubble>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
         parent = gameObject.transform.parent.gameObject;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if(activeBubble.CurrentActiveBubble == parent)
+	    if(this.activeBubble.CurrentActiveBubble == parent)
         {
-            spriteRender.enabled = true;
+            this.spriteRender.enabled = true;
         }
         else
         {
-            spriteRender.enabled = false;
+            this.spriteRender.enabled = false;
         }
 	}
 }

@@ -46,7 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CollisionKeyStoneMoveOther.cs" />
      <Compile Include="Assets\CollisionReOrganizer.cs" />
+     <Compile Include="Assets\DeactiveMovingKeyStone.cs" />
+     <Compile Include="Assets\KeyStoneMovingObject.cs" />
      <Compile Include="Assets\ReorganizeMe.cs" />
      <Compile Include="Assets\ReorganizeWalls.cs" />
      <Compile Include="Assets\Script\ActivateAura.cs" />

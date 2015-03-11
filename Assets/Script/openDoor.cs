@@ -26,7 +26,8 @@ public class openDoor : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Bubble")
+		Debug.Log ("hit");
+        if (other.tag == "Bubble" || other.name =="KeyStone")
         {
             door.open = true;
             if (key)
@@ -38,7 +39,7 @@ public class openDoor : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Bubble")
+		if (other.tag == "Bubble" || other.name =="KeyStone")
         {
             if (toogleKeyStone)
             {

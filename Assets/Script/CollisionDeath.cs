@@ -6,6 +6,10 @@ public class CollisionDeath : MonoBehaviour
 
 	StateMachine currentStateMachine;
 	Transform transformOfCurrentStateMachine;
+
+
+
+
     void Start()
     {
 		this.transformOfCurrentStateMachine = GameObject.Find ("CurrentGameState").transform;
@@ -24,6 +28,15 @@ public class CollisionDeath : MonoBehaviour
             var applicationName = Application.loadedLevelName;
             Application.LoadLevel(applicationName);
         }
+		if (other.tag == "KeyStone") 
+		{
+			Transform keyStone = GameObject.Find(other.name).transform;
+			KeyStoneMovingObject keyStoneMovingObject;
+			keyStoneMovingObject = keyStone.GetComponent<KeyStoneMovingObject>();
+			keyStoneMovingObject.resetPosition = true;
+
+
+		}
     }
 
 }
