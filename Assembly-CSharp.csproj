@@ -46,6 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CollisionKeyStoneMoveOther.cs" />
+     <Compile Include="Assets\CollisionReOrganizer.cs" />
+     <Compile Include="Assets\DeactiveMovingKeyStone.cs" />
+     <Compile Include="Assets\KeyStoneMovingObject.cs" />
+     <Compile Include="Assets\ReorganizeMe.cs" />
+     <Compile Include="Assets\ReorganizeWalls.cs" />
      <Compile Include="Assets\Script\ActivateAura.cs" />
      <Compile Include="Assets\Script\ActiveBubble.cs" />
      <Compile Include="Assets\Script\ChangePosition.cs" />
@@ -63,10 +69,10 @@
      <Compile Include="Assets\Script\MoveCamera.cs" />
      <Compile Include="Assets\Script\MoveCamraPositionToFocusZone.cs" />
      <Compile Include="Assets\Script\SpinningObject.cs" />
+     <Compile Include="Assets\Script\StateMachine.cs" />
      <Compile Include="Assets\Script\ZoneSender.cs" />
      <Compile Include="Assets\Script\openDoor.cs" />
-     <Compile Include="Assets\StateMachine.cs" />
-     <Compile Include="Assets\updatespersecond.cs" />
+     <Compile Include="Assets\Script\updatespersecond.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
