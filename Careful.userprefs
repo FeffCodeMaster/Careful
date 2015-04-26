@@ -1,14 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CollisionDeath.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../JohanFredrikTestProjekt/Assets/DetectMouse.cs">
     <Files>
-      <File FileName="Assets/KeyStoneMovingObject.cs" Line="21" Column="85" />
-      <File FileName="Assets/CollisionKeyStoneMoveOther.cs" Line="21" Column="4" />
-      <File FileName="Assets/CollisionReOrganizer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/ZoneSender.cs" Line="18" Column="36" />
-      <File FileName="Assets/ReorganizeMe.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/openDoor.cs" Line="29" Column="21" />
-      <File FileName="Assets/Script/CollisionDeath.cs" Line="29" Column="4" />
+      <File FileName="../JohanFredrikTestProjekt/Assets/DetectMouse.cs" Line="26" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
